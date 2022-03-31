@@ -11,7 +11,15 @@ export const icons = {
     mail_icon: require('./icons/mail_icon.webp'),
     up_arrow_icon: require('./icons/up_arrow_icon.webp'),
     down_arrow_icon: require('./icons/down_arrow_icon.webp'),
-    white_cat: require('./icons/white_cat.webp'),
+    moment_icon: require('./icons/moment_icon.webp'),
+    delete_icon: require('./icons/delete_icon.webp'),
+    setting_icon: require('./icons/setting_icon.webp'),
+    star_icon: require('./icons/star_icon.webp'),
+    left_arrow_icon: require('./icons/left_arrow_icon.webp'),
+    add_icon: require('./icons/add_icon.webp'),
+    activity_icon: require('./icons/activity_icon.webp'),
+    tick_icon: require('./icons/tick_icon.webp'),
+    arrow_solid_icon: require('./icons/arrow_solid_icon.webp'),
 
   };
   

@@ -5,8 +5,11 @@ import {
   Image,
   FlatList,
   ScrollView,
+  Animated,
+  Button,
+  Modal,
 } from 'react-native';
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {colors, fonts} from '../../../theme';
 import {
   CommentIcon,
@@ -24,11 +27,22 @@ import Header from '../../../components/Header';
 import {icons} from '../../../assets';
 import HomeCard from '../../../components/cards/HomeCard';
 import {HOME_DATA} from '../../../assets/data';
+import { useNavigation } from '@react-navigation/native';
+import { routes } from '../../../navigation/routes';
+
 
 const Home = () => {
+  const navigation = useNavigation();
+  const scaleValue = useRef(new Animated.Value(0)).current;
+  const [visible, setVisible] = useState(false);
+
   return (
     <View style={styles.container}>
-      <Header />
+      <Header feature 
+      //pressLeft={(() => navigation.navigate(routes.DRAWER))}
+      />
+      
+      
 
       {/* {HOME_DATA?.map((item) => (
         <HomeCard item={item}/>
@@ -40,6 +54,7 @@ const Home = () => {
           renderItem={({item}) => <HomeCard item={item} />}
         />
       </ScrollView>
+
     </View>
   );
 };

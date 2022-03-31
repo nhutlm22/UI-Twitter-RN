@@ -16,23 +16,19 @@ const BottomTabNavigation = () => {
       <Tab.Screen
         name={routes.HOMESCREENS}
         component={bottom.HOMESCREENS}
-        options={{tabBarLabel: 'Home'}}
       />
       <Tab.Screen
         name={routes.TRENDSCREENS}
         component={bottom.TRENDSCREENS}
-        options={{tabBarLabel: 'Search'}}
       />
 
       <Tab.Screen
         name={routes.NOTIFICATIONSCREENS}
         component={bottom.NOTIFICATIONSCREENS}
-        options={{tabBarLabel: 'Notification'}}
       />
       <Tab.Screen
         name={routes.MESSAGESCREENS}
         component={bottom.MESSAGESCREENS}
-        options={{tabBarLabel: 'Message'}}
       />
     </Tab.Navigator>
   );

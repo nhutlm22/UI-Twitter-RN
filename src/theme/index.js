@@ -5,9 +5,10 @@ export const colors = {
     secondary: '#E9A6A6',
     aqua: '#77C8EB',
     thirdy: '#e7f5fe',
-    background: '#1F1D36',
+    background: '#E7ECF0',
     orange: '#FE930F',
     lightGray: '#A5A5A5',
+    purple: '#724DBD',
     gray: '#424242',
     smoke: '#E6E6E6',
     white: '#ffffff',
@@ -17,7 +18,7 @@ export const colors = {
     blue: '#0d5cb6',
     red: '#E83625',
     green: '#088A08',
-    lightGreen: '#29bb89',
+    lightGreen: '#59BC6C',
     yellow: '#FFDF00',
     bgInput: '#F6F6F6',
     borderInput: '#E8E8E8',
@@ -26,6 +27,7 @@ export const colors = {
     border: '#CED5DC',
     bgSearch: '#E7ECF0',
     titleSearch: '#687684',
+    bgSwitch: '#E9E9EA',
 };
 
 export const fonts = {
@@ -33,5 +35,6 @@ export const fonts = {
     sfPro: 'SF-Pro-Display-Regular',
     sfProThin: 'SF-Pro-Display-Thin',
     sfProBlack: 'SF-Pro-Display-Black',
+    sfProSemiBold: 'SF-Pro-Display-Semibold',
 
 };

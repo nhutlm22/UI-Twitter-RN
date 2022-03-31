@@ -7,6 +7,7 @@ import { routes } from './routes';
 import { colors } from '../theme';
 import { bottom } from '../screens/bottom';
 import BottomTabNavigation from './BottomTabNavigation';
+import { other } from '../screens/other';
 
 const Stack = createNativeStackNavigator();
 
@@ -27,6 +28,18 @@ const RootStack = () => {
           name={routes.BOTTOMTABBAR}
           component={BottomTabNavigation}
         />
+        <Stack.Screen
+          name={routes.MESSAGESETTINGSCREENS}
+          component={other.MESSAGESETTINGSCREENS}
+        />
+        <Stack.Screen
+          name={routes.SEARCHSCREEN}
+          component={other.SEARCHSCREEN}
+        />
+        {/* <Stack.Screen
+          name={routes.DRAWER}
+          component={DrawerNavigation}
+        /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );

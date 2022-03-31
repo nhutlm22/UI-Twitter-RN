@@ -12,8 +12,8 @@ const CustomTabBar = ({state, descriptors, navigation}) => {
       style={{
         flexDirection: 'row',
         backgroundColor: colors.white,
-        paddingBottom: Platform.OS === 'ios' ? bottom : 10,
-        paddingTop: 10,
+        paddingBottom: Platform.OS === 'ios' ? bottom : 15,
+        paddingTop: 15,
         borderTopWidth: 0.5,
         borderTopColor: colors.border,
       }}>
@@ -84,7 +84,7 @@ const CustomTabBar = ({state, descriptors, navigation}) => {
               source={isFocused ? iconselect : icon}
               style={styles.iconstyle(isFocused)}
             />
-            <Text style={styles.textlabel(isFocused)}>{label}</Text>
+            {/* <Text style={styles.textlabel(isFocused)}>{label}</Text> */}
           </Pressable>
         );
       })}
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
   btn: {flex: 1, alignItems: 'center'},
   textlabel: isFocused => ({
     color: isFocused ? colors.primary : colors.grey,
-    marginTop: 12.6 / 2,
+    // marginTop: 12.6 / 2,
     fontSize: 12,
   }),
   iconstyle: isFocused => ({

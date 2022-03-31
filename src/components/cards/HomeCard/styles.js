@@ -9,7 +9,7 @@ export default StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 10,
     justifyContent: 'space-between',
-    borderBottomWidth: 1,
+    borderBottomWidth: 0.3,
     borderBottomColor: colors.border,
   },
   imageAvatar: {
