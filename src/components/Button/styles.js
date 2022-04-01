@@ -4,15 +4,16 @@ const {width} = Dimensions.get('screen');
 const {height} = Dimensions.get('screen');
 export default StyleSheet.create({
   container: {
-    backgroundColor: colors.primary,
+    backgroundColor: colors.bgSearch,
     borderRadius: 50,
+    alignItems: 'center'
   },
   textTitleButton: {
-    fontSize: 14,
-    fontWeight: 'bold',
+    fontSize: 18,
     fontFamily: fonts.sfProBlack,
-    color: colors.white,
+    color: colors.black,
     paddingVertical: 8,
     paddingHorizontal: 12,
+    textAlign: 'center',
   },
 });

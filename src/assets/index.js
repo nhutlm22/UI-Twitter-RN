@@ -20,6 +20,9 @@ export const icons = {
     activity_icon: require('./icons/activity_icon.webp'),
     tick_icon: require('./icons/tick_icon.webp'),
     arrow_solid_icon: require('./icons/arrow_solid_icon.webp'),
-
+    share_icon: require('./icons/share_icon.webp'),
+    heart_icon: require('./icons/heart_icon.webp'),
+    retweet_icon: require('./icons/retweet_icon.webp'),
+    pen_icon: require('./icons/pen_icon.webp'),
   };
   

@@ -11,7 +11,7 @@ const Trend = () => {
   const navigation = useNavigation()
   return (
     <View style={styles.container}>
-      <Header search pressSearch={(() => navigation.navigate(routes.SEARCHSCREEN))}/>
+      <Header search pressSearch={(() => navigation.navigate(routes.SEARCHSCREEN))} setting/>
       <View style={styles.viewHeader}>
         <Text style={styles.textHeader}>Trends for you</Text>
       </View>

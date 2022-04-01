@@ -25,11 +25,11 @@ const Header = ({
     <View style={styles.container}>
       <Pressable onPress={pressLeft}>
         {iconBack ? (
-          <Pressable
+          <TouchableOpacity
             onPress={() => navigation.goBack()}
             style={styles.viewImageLeft}>
             <Image source={icons.left_arrow_icon} style={styles.imageLeft} />
-          </Pressable>
+          </TouchableOpacity>
 
           ) : (
           <View style={styles.viewAvatar}>
@@ -60,11 +60,11 @@ const Header = ({
           <FeatureStrokeIcon width={23} height={22} />
         ) : titleRight ? (
           <Text style={styles.textTitleRight}>{titleRight}</Text>
-        ) : (
+        ) : setting ?(
           <View style={styles.viewImageRight}>
             <Image source={icons.setting_icon} style={styles.imageRight} />
           </View>
-        )}
+        ) : null}
       </Pressable>
     </View>
   );

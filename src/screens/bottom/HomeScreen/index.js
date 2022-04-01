@@ -38,8 +38,8 @@ const Home = () => {
 
   return (
     <View style={styles.container}>
-      <Header feature 
-      //pressLeft={(() => navigation.navigate(routes.DRAWER))}
+      <Header feature pressRight={(() => navigation.navigate(routes.TWEETINGOFMINESCREEN))}
+      pressLeft={(() => navigation.navigate(routes.TWEETINGOFSOMEONESCREEN))}
       />
       
       

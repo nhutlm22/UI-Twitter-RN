@@ -36,5 +36,5 @@ export const fonts = {
     sfProThin: 'SF-Pro-Display-Thin',
     sfProBlack: 'SF-Pro-Display-Black',
     sfProSemiBold: 'SF-Pro-Display-Semibold',
-
+    sfProLight: 'SF-Pro-Display-Light',
 };

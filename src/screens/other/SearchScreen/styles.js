@@ -116,4 +116,9 @@ export default StyleSheet.create({
     height: 11,
     width: 11,
   },
+  viewSearchRow: {
+    paddingVertical: 4,
+    paddingHorizontal: 6,
+    color: colors.black,
+  },
 });
