@@ -3,16 +3,20 @@ import React from 'react';
 import Header from '../../../components/Header';
 import styles from './styles';
 import {icons} from '../../../assets';
+import {useNavigation} from '@react-navigation/native';
 
 const Sap = () => {
+  const navigation = useNavigation();
+
   const Title = ({title, image}) => {
+    const navigation = useNavigation();
     return (
       <View style={styles.viewRecent}>
         <Text style={styles.textRecent}>{title}</Text>
         {image && (
-          <View style={styles.viewDelete}>
+          <Pressable style={styles.viewDelete}>
             <Image source={icons.delete_icon} style={styles.imageDelete} />
-          </View>
+          </Pressable>
         )}
       </View>
     );
@@ -37,7 +41,12 @@ const Sap = () => {
 
   return (
     <View style={styles.container}>
-      <Header title={'Settings and privacy'} nullLeft titleRight={'Done'} />
+      <Header
+        title={'Settings and privacy'}
+        nullLeft
+        titleRight={'Done'}
+        pressRight={() => navigation.goBack()}
+      />
       <Title title={'@pixsellz'} />
       <Item title={'Account'} />
       <Item title={'Privacy and safety'} />

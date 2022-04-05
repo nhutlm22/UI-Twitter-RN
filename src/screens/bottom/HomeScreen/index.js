@@ -55,7 +55,7 @@ const Home = () => {
           renderItem={({item}) => <HomeCard item={item} />}
         />
       </ScrollView>
-      <AddButton message />
+      <AddButton />
     </View>
   );
 };

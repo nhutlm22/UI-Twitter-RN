@@ -28,6 +28,14 @@ export const icons = {
     link_icon: require('./icons/link_icon.webp'),
     calendar_icon: require('./icons/calendar_icon.webp'),
     right_arrow_icon: require('./icons/right_arrow_icon.webp'),
+    camera_icon: require('./icons/camera_icon.webp'),
+    gif_icon: require('./icons/gif_icon.webp'),
+    image_icon: require('./icons/image_icon.webp'),
+    location_icon: require('./icons/location_icon.webp'),
+    plus_icon: require('./icons/plus_icon.webp'),
+    stats_icon: require('./icons/stats_icon.webp'),
+    media: require('./icons/media.webp'),
+    media_3: require('./icons/media_3.webp'),
 
   };
   
