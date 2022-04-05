@@ -1,4 +1,11 @@
-import {StyleSheet, Text, View, Image, Pressable, TouchableOpacity} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  Pressable,
+  TouchableOpacity,
+} from 'react-native';
 import React from 'react';
 import styles from './styles';
 import {FeatureStrokeIcon, IconMenu, TwitterLogo} from '../../assets/svg';
@@ -18,6 +25,7 @@ const Header = ({
   iconBack,
   titleRight,
   nullLeft,
+  avatar,
 }) => {
   const navigation = useNavigation();
 
@@ -30,13 +38,12 @@ const Header = ({
             style={styles.viewImageLeft}>
             <Image source={icons.left_arrow_icon} style={styles.imageLeft} />
           </TouchableOpacity>
-
-          ) : (
+        ) : avatar ? (
           <View style={styles.viewAvatar}>
             <Image source={icons.avatar1} style={styles.imageAvatar} />
             <View style={styles.viewNotification} />
           </View>
-        )}
+        ) : null}
       </Pressable>
 
       {search ? (
@@ -60,7 +67,7 @@ const Header = ({
           <FeatureStrokeIcon width={23} height={22} />
         ) : titleRight ? (
           <Text style={styles.textTitleRight}>{titleRight}</Text>
-        ) : setting ?(
+        ) : setting ? (
           <View style={styles.viewImageRight}>
             <Image source={icons.setting_icon} style={styles.imageRight} />
           </View>

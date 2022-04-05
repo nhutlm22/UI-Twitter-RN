@@ -24,5 +24,10 @@ export const icons = {
     heart_icon: require('./icons/heart_icon.webp'),
     retweet_icon: require('./icons/retweet_icon.webp'),
     pen_icon: require('./icons/pen_icon.webp'),
+    add_text_icon: require('./icons/add_text_icon.webp'),
+    link_icon: require('./icons/link_icon.webp'),
+    calendar_icon: require('./icons/calendar_icon.webp'),
+    right_arrow_icon: require('./icons/right_arrow_icon.webp'),
+
   };
   

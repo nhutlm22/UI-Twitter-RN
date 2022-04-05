@@ -44,6 +44,22 @@ const RootStack = () => {
           name={routes.TWEETINGOFSOMEONESCREEN}
           component={other.TWEETINGOFSOMEONESCREEN}
         />
+        <Stack.Screen
+          name={routes.NEWMESSAGESCREEN}
+          component={other.NEWMESSAGESCREEN}
+        />
+        <Stack.Screen
+          name={routes.TWEETINGSCREEN}
+          component={other.TWEETINGSCREEN}
+        />
+        <Stack.Screen
+          name={routes.PROFILESCREEN}
+          component={other.PROFILESCREEN}
+        />
+        <Stack.Screen
+          name={routes.SETTINGSANDPRIVACY}
+          component={other.SETTINGSANDPRIVACY}
+        />
         {/* <Stack.Screen
           name={routes.DRAWER}
           component={DrawerNavigation}

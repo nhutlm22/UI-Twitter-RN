@@ -28,6 +28,7 @@ export const colors = {
     bgSearch: '#E7ECF0',
     titleSearch: '#687684',
     bgSwitch: '#E9E9EA',
+    bgSB: '#1F1F1F',
 };
 
 export const fonts = {

@@ -11,6 +11,7 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     borderBottomWidth: 0.3,
     borderBottomColor: colors.border,
+    position: 'relative',
   },
   imageAvatar: {
     width: 55,

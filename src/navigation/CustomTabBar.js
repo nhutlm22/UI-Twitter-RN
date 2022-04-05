@@ -92,6 +92,7 @@ const CustomTabBar = ({state, descriptors, navigation}) => {
   );
 };
 export default CustomTabBar;
+
 const styles = StyleSheet.create({
   btn: {flex: 1, alignItems: 'center'},
   textlabel: isFocused => ({
