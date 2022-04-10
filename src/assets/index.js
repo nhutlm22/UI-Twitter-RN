@@ -35,7 +35,16 @@ export const icons = {
     plus_icon: require('./icons/plus_icon.webp'),
     stats_icon: require('./icons/stats_icon.webp'),
     media: require('./icons/media.webp'),
+    media_2: require('./icons/media_2.webp'),
     media_3: require('./icons/media_3.webp'),
+    media_1: require('./icons/media_1.webp'),
+    menu_icon: require('./icons/menu_icon.webp'),
+    topic_icon: require('./icons/topic_icon.webp'),
+    profile_icon: require('./icons/profile_icon.webp'),
+    list_icon: require('./icons/list_icon.webp'),
+    bookmarks_icon: require('./icons/bookmarks_icon.webp'),
+    light_icon: require('./icons/light_icon.webp'),
+    qr_icon: require('./icons/qr_icon.webp'),
 
   };
   

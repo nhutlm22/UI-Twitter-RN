@@ -3,6 +3,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import CustomTabBar from './CustomTabBar';
 import {routes} from './routes';
 import {bottom} from '../screens/bottom';
+import CustomDrawerContent from './DrawerNavigation/CustomDrawerContent';
 
 const Tab = createBottomTabNavigator();
 const BottomTabNavigation = () => {
@@ -35,3 +36,5 @@ const BottomTabNavigation = () => {
 };
 
 export default BottomTabNavigation;
+
+

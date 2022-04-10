@@ -41,8 +41,8 @@ export default StyleSheet.create({
     flexDirection: 'row',
   },
   imageAvatar: {
-    width: 37,
-    height: 37,
+    width: 41,
+    height: 41,
   },
   textInput: {
     width: 340,
@@ -64,7 +64,7 @@ export default StyleSheet.create({
     borderRadius: 16,
     alignItems: 'center',
     justifyContent: 'center',
-  },
+ },
   imageCamera: {
     height: 26.5,
     width: 26.5,
@@ -76,6 +76,8 @@ export default StyleSheet.create({
     borderTopColor: colors.border,
     borderTopWidth: 0.3,
     justifyContent: 'space-between',
+    alignItems: 'center'
+
   },
 
   viewImageIcon: {
@@ -117,4 +119,5 @@ export default StyleSheet.create({
     height: 9,
     width: 9,
   },
+  sc: {marginLeft: 8},
 });

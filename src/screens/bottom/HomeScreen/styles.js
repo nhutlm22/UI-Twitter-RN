@@ -1,5 +1,5 @@
 import {StyleSheet, Dimensions} from 'react-native';
-import { colors } from '../../../theme';
+import { colors, fonts } from '../../../theme';
 const {width} = Dimensions.get('screen');
 const {height} = Dimensions.get('screen');
 export default StyleSheet.create({
@@ -7,4 +7,5 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: colors.white,
   },
+
 });

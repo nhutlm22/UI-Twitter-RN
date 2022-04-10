@@ -4,14 +4,18 @@ import styles from './styles';
 import Header from '../../../components/Header';
 import Button from '../../../components/Button';
 import {colors, fonts} from '../../../theme';
-import { useNavigation } from '@react-navigation/native';
-import { routes } from '../../../navigation/routes';
+import {useNavigation} from '@react-navigation/native';
+import {routes} from '../../../navigation/routes';
 
 const Trend = () => {
-  const navigation = useNavigation()
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      <Header search pressSearch={(() => navigation.navigate(routes.SEARCHSCREEN))} setting/>
+      <Header
+        search
+        pressSearch={() => navigation.navigate(routes.SEARCHSCREEN)}
+        setting
+      />
       <View style={styles.viewHeader}>
         <Text style={styles.textHeader}>Trends for you</Text>
       </View>
@@ -22,7 +26,11 @@ const Trend = () => {
             It seems like there's not a lot to show you right now, but you can
             see trends for other areas
           </Text>
-          <Button title={'Change Location'}/>
+          <Button
+            title={'Change Location'}
+            style={{paddingHorizontal: 8, backgroundColor: colors.primary}}
+            textStyle={{color: colors.white, fontWeight: 'bold'}}
+          />
         </View>
       </View>
     </View>
