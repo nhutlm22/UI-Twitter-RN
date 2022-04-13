@@ -7,4 +7,27 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: colors.background,
   },
+  viewSearch: {
+    backgroundColor: colors.white,
+    borderBottomWidth: 0.3,
+    borderBottomColor: colors.border,
+  },
+  viewTextInput: {
+    backgroundColor: colors.bgSearch,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  imageSearch: {
+    height: 13,
+    width: 13,
+    marginVertical: 10,
+    marginLeft: 12,
+    marginRight: 4,
+  },
+  textSearch: {
+    fontSize: 17,
+    fontFamily: fonts.sfProBlack,
+    color: colors.black,
+    paddingVertical: 8,
+  },
 });

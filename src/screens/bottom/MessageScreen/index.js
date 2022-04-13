@@ -8,6 +8,7 @@ import MessageCard from '../../../components/cards/MessageCard';
 import { MESSAGE_DATA } from '../../../assets/data';
 import { routes } from '../../../navigation/routes';
 import { useNavigation } from '@react-navigation/native';
+import AddButton from '../../../components/AddButton';
 
 const Message = () => {
   const navigation = useNavigation();
@@ -30,6 +31,7 @@ const Message = () => {
             renderItem={({item}) => <MessageCard item={item} />}
           />
         </ScrollView>
+        <AddButton message/>
     </View>
   );
 };

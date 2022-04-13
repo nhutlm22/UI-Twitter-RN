@@ -55,7 +55,7 @@ const Header = ({
         </TouchableOpacity>
       ) : title ? (
         <Text
-          style={[styles.textTitle, {marginLeft: titleRight ? 30 : 0.00001}]}>
+          style={[styles.textTitle, {marginLeft: titleRight ? 30 : 0.00001}, {marginRight: iconBack && !titleRight && !setting ? 10 : 0}]}>
           {title}
         </Text>
       ) : (

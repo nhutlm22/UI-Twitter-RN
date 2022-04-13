@@ -65,6 +65,10 @@ const RootStack = () => {
           name={routes.DRAWER}
           component={DrawerNavigation}
         />
+        <Stack.Screen
+          name={routes.LISTSCREEN}
+          component={other.LISTSCREEN}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

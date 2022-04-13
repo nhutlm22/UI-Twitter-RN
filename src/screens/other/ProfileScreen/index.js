@@ -1,4 +1,5 @@
 import {
+  FlatList,
   Image,
   StatusBar,
   StyleSheet,
@@ -11,10 +12,20 @@ import styles from './styles';
 import {icons} from '../../../assets';
 import {colors} from '../../../theme';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
-import { routes } from '../../../navigation/routes';
+import {routes} from '../../../navigation/routes';
 import CustomTopTab from './CustomTopTab';
-import { other } from '..';
-import { useNavigation } from '@react-navigation/native';
+import {other} from '..';
+import {useNavigation} from '@react-navigation/native';
+import {
+  HOME_DATA,
+  MEMBEROF_DATA,
+  NOTIFICATION_DATA,
+} from '../../../assets/data';
+import MemberOfCard from '../../../components/cards/MEMBEROFCARD';
+import Button from '../../../components/Button';
+import HomeCard from '../../../components/cards/HomeCard';
+import NotificationCard from '../../../components/cards/NotificationCard';
+import AddButton from '../../../components/AddButton';
 
 const Profile = () => {
   const Tab = createMaterialTopTabNavigator();
@@ -78,27 +89,67 @@ const Profile = () => {
     );
   };
 
+  const SUBSCRIBED_TO = () => {
+    return (
+      <View style={{flex: 1}}>
+        <FlatList
+          showsVerticalScrollIndicator={false}
+          data={HOME_DATA}
+          keyExtractor={item => item.id}
+          renderItem={({item}) => <HomeCard item={item} />}
+        />
+      </View>
+    );
+  };
+
+  const MEMBER_OF = () => {
+    return (
+      <FlatList
+        showsVerticalScrollIndicator={false}
+        data={NOTIFICATION_DATA}
+        keyExtractor={item => item.id}
+        renderItem={({item}) => <NotificationCard item={item} />}
+      />
+    );
+  };
+
+  const MEDIA = () => {
+    return (
+      <FlatList
+        showsVerticalScrollIndicator={false}
+        data={MEMBEROF_DATA}
+        keyExtractor={item => item.id}
+        renderItem={({item}) => <MemberOfCard item={item} />}
+      />
+    );
+  };
+
+  const LIKES = () => {
+    return (
+      <FlatList
+        showsVerticalScrollIndicator={false}
+        data={HOME_DATA}
+        keyExtractor={item => item.id}
+        renderItem={({item}) => <HomeCard item={item} />}
+      />
+    );
+  };
+
   return (
     <View style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor={colors.bgSB} />
       <Header />
       <Body />
-      {/* <View style={{backgroundColor: colors.red}}>
-        <Tab.Navigator
-          // lazy={true}
-          initialRouteName={routes.TWEETINGOFMINESCREEN}
-          optimizationsEnabled={true}
-          tabBar={props => <CustomTopTab {...props} />}>
-          <Tab.Screen
-            name={routes.TWEETINGOFMINESCREEN}
-            component={other.TWEETINGOFMINESCREEN}
-          />
-          <Tab.Screen
-            name={routes.TWEETINGOFSOMEONESCREEN}
-            component={other.TWEETINGOFSOMEONESCREEN}
-          />
-        </Tab.Navigator>
-      </View> */}
+      <Tab.Navigator
+        lazy={true}
+        optimizationsEnabled={true}
+        tabBar={props => <CustomTopTab {...props} />}>
+        <Tab.Screen name="Tweets" component={SUBSCRIBED_TO} />
+        <Tab.Screen name="Tweets and replies" component={MEMBER_OF} />
+        <Tab.Screen name="Media" component={MEDIA} />
+        <Tab.Screen name="Likes" component={LIKES} />
+      </Tab.Navigator>
+      <AddButton />
     </View>
   );
 };

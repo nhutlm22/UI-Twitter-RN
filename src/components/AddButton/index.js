@@ -3,23 +3,37 @@ import React from 'react';
 import {colors} from '../../theme';
 import {icons} from '../../assets';
 import styles from './styles';
-import { useNavigation } from '@react-navigation/native';
-import { routes } from '../../navigation/routes';
+import {useNavigation} from '@react-navigation/native';
+import {routes} from '../../navigation/routes';
 
-const AddButton = ({press, message}) => {
+const AddButton = ({press, message, add_member}) => {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
       {message ? (
-        <TouchableOpacity onPress={(() => navigation.navigate(routes.SETTINGSANDPRIVACY))} style={{padding: 16}}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate(routes.SETTINGSANDPRIVACY)}
+          style={{padding: 16}}>
           <Image
             source={icons.add_icon}
             resizeMode="contain"
             style={{height: 24, width: 22}}
           />
         </TouchableOpacity>
+      ) : add_member ? (
+        <TouchableOpacity
+          onPress={() => navigation.navigate(routes.TWEETINGSCREEN)}
+          style={{padding: 16}}>
+          <Image
+            source={icons.add_member_icon}
+            resizeMode="contain"
+            style={{height: 24, width: 22}}
+          />
+        </TouchableOpacity>
       ) : (
-        <TouchableOpacity onPress={(() => navigation.navigate(routes.TWEETINGSCREEN))} style={{padding: 16}}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate(routes.TWEETINGSCREEN)}
+          style={{padding: 16}}>
           <Image
             source={icons.add_text_icon}
             resizeMode="contain"

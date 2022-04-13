@@ -58,8 +58,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     backgroundColor: colors.white,
-    borderBottomWidth: 0.3,
-    borderBottomColor: colors.border,
   },
   viewIsFocused: isFocused => ({
     borderBottomColor: isFocused ? colors.aqua : colors.border,

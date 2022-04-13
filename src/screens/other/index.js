@@ -6,6 +6,7 @@ import TweetingOfSomeoneScreen from './TwitterOfSomeoneScreen'
 import TweetingScreen from './TweetingScreen' 
 import ProfileScreen from './ProfileScreen'
 import SettingsAndPrivacyScreen from './SettingsAndPrivacyScreen'
+import ListScreen from './ListScreen'
 
 export const other = {
     MESSAGESETTINGSCREENS: MessageSettingScreens,
@@ -16,4 +17,5 @@ export const other = {
     TWEETINGSCREEN: TweetingScreen,
     PROFILESCREEN: ProfileScreen,
     SETTINGSANDPRIVACY: SettingsAndPrivacyScreen,
+    LISTSCREEN: ListScreen,
 }

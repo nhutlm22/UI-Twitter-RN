@@ -107,16 +107,14 @@ export const MESSAGE_DATA = [
   {
     id: 1,
     title: 'Martha Craig',
-    content:
-      'You: You’re very welcome AzizDjan!',
+    content: 'You: You’re very welcome AzizDjan!',
     time: '4/16/22',
     avatar: icons.avatar1,
   },
   {
     id: 2,
     title: 'AzizDjan',
-    content:
-      'You accepted the request',
+    content: 'You accepted the request',
     time: '6/12/22',
 
     avatar: icons.avatar2,
@@ -133,8 +131,7 @@ export const MESSAGE_DATA = [
   {
     id: 4,
     title: 'Komol Kuchkarov',
-    content:
-      'sent you a link: Hello Pixsellz,',
+    content: 'sent you a link: Hello Pixsellz,',
     time: '3/29/22',
 
     avatar: icons.avatar4,
@@ -142,8 +139,7 @@ export const MESSAGE_DATA = [
   {
     id: 5,
     title: 'karennne',
-    content:
-      'You: Just started 5 months ago',
+    content: 'You: Just started 5 months ago',
 
     time: '8/2/22',
     avatar: icons.avatar5,
@@ -151,8 +147,7 @@ export const MESSAGE_DATA = [
   {
     id: 6,
     title: 'Maximillian',
-    content:
-      'You accepted the request',
+    content: 'You accepted the request',
 
     time: '1/4/22',
     avatar: icons.avatar1,
@@ -178,21 +173,93 @@ export const MESSAGE_DATA = [
   {
     id: 9,
     title: 'Martha Craig',
-    content:
-      'You: You’re very welcome AzizDjan!',
+    content: 'You: You’re very welcome AzizDjan!',
     time: '4/16/22',
     avatar: icons.avatar4,
   },
   {
     id: 10,
     title: 'AzizDjan',
-    content:
-      'You accepted the request',
+    content: 'You accepted the request',
     time: '6/12/22',
 
     avatar: icons.avatar5,
   },
+];
 
+export const NEWMESSAGE_DATA = [
+  {
+    id: 1,
+    title: 'AzizDjan',
+    tag: '@A_AzizDjan',
+    avatar: icons.avatar1,
+  },
+  {
+    id: 2,
+    title: 'Kieron Dotson',
+    tag: '@kiero_d',
+    avatar: icons.avatar2,
+  },
+  {
+    id: 3,
+    title: 'Figma',
+    tag: '@figmadesign',
+    avatar: icons.avatar3,
+  },
+  {
+    id: 4,
+    title: 'AzizDjan',
+    tag: '@A_AzizDjan',
+    avatar: icons.avatar1,
+  },
+  {
+    id: 5,
+    title: 'Kieron Dotson',
+    tag: '@kiero_d',
+    avatar: icons.avatar2,
+  },
+  {
+    id: 6,
+    title: 'Figma',
+    tag: '@figmadesign',
+    avatar: icons.avatar3,
+  },
+  {
+    id: 7,
+    title: 'AzizDjan',
+    tag: '@A_AzizDjan',
+    avatar: icons.avatar1,
+  },
+  {
+    id: 8,
+    title: 'Kieron Dotson',
+    tag: '@kiero_d',
+    avatar: icons.avatar2,
+  },
+  {
+    id: 9,
+    title: 'Figma',
+    tag: '@figmadesign',
+    avatar: icons.avatar3,
+  },
+  {
+    id: 10,
+    title: 'AzizDjan',
+    tag: '@A_AzizDjan',
+    avatar: icons.avatar1,
+  },
+  {
+    id: 11,
+    title: 'Kieron Dotson',
+    tag: '@kiero_d',
+    avatar: icons.avatar2,
+  },
+  {
+    id: 12,
+    title: 'Figma',
+    tag: '@figmadesign',
+    avatar: icons.avatar3,
+  },
 ];
 
 export const SEARCH_DATA = [
@@ -209,7 +276,7 @@ export const SEARCH_DATA = [
     tag: '@mis_potter',
     tick: false,
     avatar: icons.avatar2,
-  },  
+  },
   {
     id: 3,
     title: 'Martha Cr...',
@@ -230,12 +297,60 @@ export const SEARCH_DATA = [
     tag: '@mis_potter',
     tick: false,
     avatar: icons.avatar5,
-  },  
+  },
   {
     id: 6,
     title: 'Martha Crccccccccc',
     tag: '@craig_love',
     tick: true,
     avatar: icons.avatar1,
+  },
+];
+
+export const MEMBEROF_DATA = [
+  {
+    id: 1,
+    name: 'Joshua Lawrence',
+    team: 'D-teams',
+    system: true,
+    member: 277,
+    subscriber: 0,
+    avatar: icons.avatar1,
+  },
+  {
+    id: 2,
+    name: 'Pixsellz Team',
+    team: 'start-up',
+    system: false,
+    member: 77,
+    subscriber: 0,
+    avatar: icons.avatar2,
+  },
+  {
+    id: 3,
+    name: 'Pixsellz Team',
+    team: 'gadgets',
+    system: false,
+    member: 88,
+    subscriber: 5,
+    avatar: icons.avatar3,
+  },
+  {
+    id: 4,
+    name: 'Pixsellz Team',
+    team: 'designer',
+    system: false,
+    member: 68,
+    subscriber: 0,
+    avatar: icons.avatar4,
+  },
+  {
+    id: 5,
+    name: 'Ustrations',
+    team: 'Illustrators',
+    system: false,
+    member: 3959,
+    subscriber: 11,
+    avatar: icons.avatar5,
   },
 ];

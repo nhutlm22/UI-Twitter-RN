@@ -51,8 +51,7 @@ const Home = () => {
       <Header
         avatar
         feature
-        pressRight={() => navigation.navigate(routes.TWEETINGOFMINESCREEN)}
-        pressLeft={() => navigation.navigate(routes.TWEETINGOFSOMEONESCREEN)}
+        pressLeft={() => navigation.openDrawer()}
       />
 
       {/* {HOME_DATA?.map((item) => (

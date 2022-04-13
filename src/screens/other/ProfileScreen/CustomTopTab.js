@@ -1,16 +1,10 @@
 import React from 'react';
 import {Pressable, StyleSheet, Text, View} from 'react-native';
-import { colors, fonts } from '../../../theme';
+import {colors, fonts} from '../../../theme';
 
-const CustomTopTab = ({state, descriptors, navigation, style}) => {
+const CustomTopTab = ({state, descriptors, navigation}) => {
   return (
-    <View
-      style={{
-        flexDirection: 'row',
-        justifyCenter: 'center',
-        alignItems: 'center',
-        paddingVertical: 12,
-      }}>
+    <View style={styles.container}>
       {state.routes.map((route, index) => {
         const {options} = descriptors[route.key];
         const label =
@@ -49,10 +43,8 @@ const CustomTopTab = ({state, descriptors, navigation, style}) => {
             testID={options.tabBarTestID}
             onPress={onPress}
             onLongPress={onLongPress}
-            style={{
-              ...style,
-            }}>
-            <Text style={styles.textStyle(isFocused)}>{label}</Text>
+            style={styles.viewIsFocused(isFocused)}>
+            <Text numberOfLines={1} style={styles.textStyle(isFocused)}>{label}</Text>
           </Pressable>
         );
       })}
@@ -62,12 +54,24 @@ const CustomTopTab = ({state, descriptors, navigation, style}) => {
 export default CustomTopTab;
 
 const styles = StyleSheet.create({
-    textStyle: isFocused => ({
-        color: isFocused ? colors.white : colors.black,
-        textAlign: 'center',
-        fontFamily: isFocused
-          ? fonts.sfProBlack
-          : fonts.sfProBlack,
-        fontSize: 14,
-      }),
-  });
+  container: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    backgroundColor: colors.white,
+    borderBottomWidth: 0.3,
+    borderBottomColor: colors.border,
+  },
+  viewIsFocused: isFocused => ({
+    borderBottomColor: isFocused ? colors.aqua : colors.border,
+    borderBottomWidth: isFocused ? 2 : 0.3,
+    paddingVertical: 12,
+    flex: 1,
+  }),
+  textStyle: isFocused => ({
+    color: isFocused ? colors.primary : colors.titleSearch,
+    textAlign: 'center',
+    fontFamily: fonts.sfProBlack,
+    fontWeight: 'bold',
+    fontSize: 16,
+  }),
+});

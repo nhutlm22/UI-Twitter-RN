@@ -28,7 +28,7 @@ const DrawerNavigation = () => {
       <Drawer.Screen name="Profile" component={other.PROFILESCREEN} />
       <Drawer.Screen name="Tweeting" component={other.TWEETINGSCREEN} />
       <Drawer.Screen name="Settings and privacy" component={other.SETTINGSANDPRIVACY} />
-      <Drawer.Screen name="Help Center" component={other.SEARCHSCREEN} />
+      <Drawer.Screen name="List" component={other.LISTSCREEN} />
 
     </Drawer.Navigator>
   );

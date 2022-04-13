@@ -19,6 +19,7 @@ import HomeCard from '../../../components/cards/HomeCard';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import CustomTopTab from './CustomTopTab';
 import {other} from '../../other';
+import AddButton from '../../../components/AddButton';
 
 const ALL = () => {
   return (
@@ -65,6 +66,8 @@ const Notification = ({title1}) => {
         <Tab.Screen name="All" component={ALL} />
         <Tab.Screen name="Mentions" component={MENTIONS} />
       </Tab.Navigator>
+      <AddButton />
+
     </View>
   );
 };

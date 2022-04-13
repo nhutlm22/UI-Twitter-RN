@@ -6,6 +6,7 @@ import Button from '../../../components/Button';
 import {colors, fonts} from '../../../theme';
 import {useNavigation} from '@react-navigation/native';
 import {routes} from '../../../navigation/routes';
+import AddButton from '../../../components/AddButton';
 
 const Trend = () => {
   const navigation = useNavigation();
@@ -33,6 +34,8 @@ const Trend = () => {
           />
         </View>
       </View>
+      <AddButton />
+
     </View>
   );
 };

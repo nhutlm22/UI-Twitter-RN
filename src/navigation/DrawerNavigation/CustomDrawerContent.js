@@ -20,7 +20,12 @@ const CustomDrawerContent = ({state, descriptors, navigation}) => {
           <View style={styles.viewHeaderImage}>
             <Image source={icons.avatar1} style={{height: 55, width: 55}} />
             <View style={styles.viewHeaderImageRow}>
-              <Image source={icons.avatar2} style={{height: 32, width: 32}} />
+              <View style={styles.viewNumber}>
+                <Image source={icons.avatar2} style={{height: 32, width: 32}} />
+                <View style={styles.viewNumberAbsolute}>
+                  <Text style={styles.textNumber}>2</Text>
+                </View>
+              </View>
               <Image
                 source={icons.menu_icon}
                 style={{height: 32, width: 32, marginLeft: 8}}

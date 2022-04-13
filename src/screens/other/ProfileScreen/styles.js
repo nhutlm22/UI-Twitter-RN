@@ -5,6 +5,8 @@ const {height} = Dimensions.get('screen');
 export default StyleSheet.create({
   container: {
     backgroundColor: colors.aqua,
+    flex: 1,
+    position: 'relative'
   },
   viewHeader: {
     backgroundColor: colors.bgSB,

@@ -45,6 +45,7 @@ export const icons = {
     bookmarks_icon: require('./icons/bookmarks_icon.webp'),
     light_icon: require('./icons/light_icon.webp'),
     qr_icon: require('./icons/qr_icon.webp'),
+    add_member_icon: require('./icons/add_member_icon.webp'),
 
   };
   
