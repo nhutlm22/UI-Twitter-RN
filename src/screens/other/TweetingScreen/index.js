@@ -43,6 +43,7 @@ export const DATA_IMAGE = [
   },
 ];
 
+
 const Tweeting = () => {
   const Header = () => {
     const navigation = useNavigation();
