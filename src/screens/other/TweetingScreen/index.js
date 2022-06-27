@@ -43,7 +43,7 @@ export const DATA_IMAGE = [
   },
 ];
 
-
+//Wow dc roi ne
 const Tweeting = () => {
   const Header = () => {
     const navigation = useNavigation();
